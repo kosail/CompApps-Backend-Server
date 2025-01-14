@@ -24,7 +24,7 @@ class EmailService (private val mailSender: JavaMailSender) {
 
         // setFrom was used because for some reason, in the application.properties file the field for email setting was not working, even tho it was being recognized.
         // Still, the email here should match the one in applications.properties.
-        helper.setFrom("email@example.com", "Equipo de CompApp")
+        helper.setFrom("<email-here>", "Equipo de CompApp")
 
         helper.setTo(to)
         helper.setSubject(subject)
